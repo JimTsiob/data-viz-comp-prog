@@ -42,8 +42,8 @@ body {
 	color: #D93333;
 }
 
-#font27{
-	font-size: 25px;
+#font20{
+	font-size: 20px;
 	color: #FFFFFF;
 	text-align: left;
 }
@@ -164,4 +164,5 @@ body {
 		text-align: left;
 		flex-direction: column;
 	}
+	
 }
