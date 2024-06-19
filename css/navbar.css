@@ -17,6 +17,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  z-index: 99;
 }
 
 .index {
@@ -88,7 +90,7 @@
     /* margin-right: 10px; */
   }
 
-  .nav_img, .vl {
+  .for-nav, .vl {
     display: none;
   }
 

@@ -173,16 +173,6 @@ body {
 		margin-left: 10px;
 	}
 
-	.tableauPlaceholder {
-        width: 50%;
-        height: 450px;
-    }
-
-	.tableauViz {
-		width: 100%;
-		height: 500px;
-	}
-
 	#imageContainer {
 		display: flex;
 		justify-content: center;

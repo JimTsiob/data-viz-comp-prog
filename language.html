@@ -6,12 +6,19 @@
     <title>Languages</title>
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/plots.css" />
+    <link rel="stylesheet" href="css/transitions.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.slim.js"
+      integrity="sha256-UgvvN8vBkgO0luPSUl2s8TIlOSYRoGFAX4jlCIm9Adc="
+      crossorigin="anonymous"
+    ></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
       rel="stylesheet"
@@ -20,16 +27,69 @@
   <body>
     <script src="navbar.js"></script>
 
-    <h1 id="headerLibre">Programming Languages</h1>
-    <p id="paragraphLibre">This is the content of Page 1.</p>
+    <div class="intro">
+      <h1 id="headerLibre">Programming Languages</h1>
+      <p id="paragraphLibre">
+        If coding is war, programming language is the weapon. <br /><br />We
+        start by showcasing charts about the languages used in competitive
+        programming.
+      </p>
+    </div>
 
-    
+    <div class="plot-group tag reverse-order-mobile">
+      <div class="inner-plot-group right-text-aling">
+        <h3 class="plot-title">Lines Of Code per language</h3>
+        <p class="plot-desc">
+          Analysis of visuaization for languages. Testing my visualization with
+          a neat description. Go team 1! 📊
+        </p>
+      </div>
+      <iframe
+        width="40%"
+        height="600"
+        frameborder="0"
+        scrolling="no"
+        src="//plotly.com/~loukaspap/1.embed"
+      ></iframe>
+    </div>
+
+    <div class="plot-group tag">
+      <iframe
+        width="40%"
+        height="600"
+        frameborder="0"
+        scrolling="no"
+        src="//plotly.com/~loukaspap/4.embed"
+      ></iframe>
+      <div class="inner-plot-group left-text-aling">
+        <h3 class="plot-title">Solution per language</h3>
+        <p class="plot-desc">
+          Donut chart, yummy. In the center we put extra information. Go team 1!
+          📊
+        </p>
+      </div>
+    </div>
+
+    <div class="plot-group tag reverse-order-mobile">
+      <div class="inner-plot-group right-text-aling">
+        <h3 class="plot-title">Users changed languages </h3>
+        <p class="plot-desc">
+          Analysis of visuaization for languages. Testing my visualization with
+          a neat description. Go team 1! 📊
+        </p>
+      </div>
+      <iframe
+        width="30%"
+        height="600"
+        frameborder="0"
+        src="https://observablehq.com/embed/@loukas/chord-diagram-lang@197?cells=chart"
+      ></iframe>
+    </div>
   </body>
 
   <script>
     var a = document.getElementById("language");
     a.className = "active";
-
     function myFunction() {
       var x = document.getElementById("myTopnav");
       if (x.className === "topnav") {
@@ -38,5 +98,30 @@
         x.className = "topnav";
       }
     }
+  </script>
+
+  <script>
+    $(document).on("scroll", function () {
+      var pageTop = $(document).scrollTop();
+      var pageBottom = pageTop + $(window).height();
+      var tags = $(".tag");
+
+      for (var i = 0; i < tags.length; i++) {
+        var tag = tags[i];
+
+        if ($(tag).position().top < pageBottom) {
+          $(tag).addClass("visible");
+        } else {
+          $(tag).removeClass("visible");
+        }
+      }
+    });
+  </script>
+
+  <script>
+    const element2 = document.getElementsByClassName(
+      "pa2"
+    );
+    element2.remove();
   </script>
 </html>
