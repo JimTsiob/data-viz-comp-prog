@@ -1,0 +1,19 @@
+.tag {
+  opacity: 0.1;
+  transform: translate(0, 10vh);
+  transition: all 2s;
+}
+
+.tag.visible {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+.fade-in-plot {
+    opacity: 50%;
+  }
+  
+  .fade-in-plot:hover {
+    opacity: 100%;
+    transition: opacity 1s;
+  }
