@@ -1,0 +1,13 @@
+Status,TimeTaken
+accepted,0.2560130130061282
+compiling..,0.0
+internal error,0.029166666666666667
+running judge..,0.0
+running..,0.0
+runtime error(NZEC),0.16310227448553302
+runtime error(OTHER),4.9956686626746505
+runtime error(SIGABRT),0.3263015463917526
+runtime error(SIGFPE),0.2893024861878453
+runtime error(SIGSEGV),0.15772858209751414
+runtime error(SIGXFSZ),1.895842541436464
+wrong answer,0.27968161466227637
