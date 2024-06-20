@@ -4,20 +4,32 @@ body {
 	text-align: center;
 	background-image: url("../images/Noise.svg");
 
-	/* display: flex;
-	justify-content: center;
-	flex-direction: column; */
+}
 
+.language-color {
+	color: #d93333;
+}
+
+.problem-color {
+	color: #23ca9b;
+}
+
+.time-color {
+	color: #7838df;
+}
+
+.website-color {
+	color: #d9eb3f;
 }
 
 .intro {
-	margin: 250px 20%;
+	margin: 0px 20%;
 	display: flex;
 	justify-content: flex-start;
 	flex-direction: column;
 	align-items: flex;
 	gap: 0px;
-  
+	margin-bottom: 200px;
   }
 
 #headerLibre{
@@ -147,7 +159,7 @@ body {
 @media (max-width: 600px) {
 
 	.intro {
-		margin: 30% 0%;
+		margin: 10% 0%;
 		display: flex;
 		justify-content: flex-start;
 		flex-direction: column;
@@ -162,6 +174,14 @@ body {
 		color: #D93333;
 		margin-top: 130px;
 	}
+
+	#paragraphLibre {
+		font-size: 2em;
+		max-width: 70%;
+		margin: 5px auto;
+		color: #ffffff;
+		text-align: center;
+	  }
 
     #wiliiamImage{
 		width: 300px;

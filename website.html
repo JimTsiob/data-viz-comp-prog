@@ -1,27 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website analytics</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/navbar.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-</head>
-<body>
+<<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Website</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/navbar.css" />
+  <link rel="stylesheet" href="css/plots.css" />
+  <link rel="stylesheet" href="css/transitions.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <script src="https://code.jquery.com/jquery-3.7.1.slim.js"
+    integrity="sha256-UgvvN8vBkgO0luPSUl2s8TIlOSYRoGFAX4jlCIm9Adc=" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
+    rel="stylesheet" />
+  </head>
+
+  <body>
     <script src="navbar.js"></script>
 
-    <h1 id="headerLibre">Website analytics</h1>
-    <p id="paragraphLibre">website analytics page.</p>
-</body>
+    <div class="intro">
+      <h1 id="headerLibre">Website</h1>
+      <p id="paragraphLibre">
+        Content for website visualization <br /><br />\\{-_-}//
+      </p>
+    </div>
 
-<script>
+    <div class="plot-group tag reverse-order-mobile">
+      <div class="inner-plot-group right-text-aling">
+        <h3 class="plot-title website-color">Activity per month</h3>
+        <p class="plot-desc">
+          Replace with text and replace iframe src
+        </p>
+      </div>
+      <iframe width="50%" height="600" frameborder="0" scrolling="no" src="//plotly.com/~loukaspap/6.embed"></iframe>
+    </div>
+    </div>
+
+    <div class="plot-group tag">
+      <iframe width="50%" height="600" frameborder="0" scrolling="no" src="//plotly.com/~loukaspap/8.embed"></iframe>
+      <div class="inner-plot-group left-text-aling">
+        <h3 class="plot-title website-color">Traffic per hour</h3>
+        <p class="plot-desc">
+          Replace with text and replace iframe src
+        </p>
+      </div>
+    </div>
+  </body>
+
+  <script>
     var a = document.getElementById("website");
     a.className = "active";
 
@@ -34,4 +62,31 @@
       }
     }
   </script>
+
+
+  <script>
+    $(document).on("scroll", function () {
+      var pageTop = $(document).scrollTop();
+      var pageBottom = pageTop + $(window).height();
+      var tags = $(".tag");
+
+      for (var i = 0; i < tags.length; i++) {
+        var tag = tags[i];
+
+        if ($(tag).position().top < pageBottom) {
+          $(tag).addClass("visible");
+        } else {
+          $(tag).removeClass("visible");
+        }
+      }
+    });
+  </script>
+
+  <script>
+    const element2 = document.getElementsByClassName(
+      "pa2"
+    );
+    element2.remove();
+  </script>
+
 </html>

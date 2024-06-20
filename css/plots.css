@@ -19,8 +19,16 @@ h3.plot-title {
   font-size: 2.5em;
   font-family: "Libre Baskerville";
   font-style: italic;
+}
 
-  color: #d93333;
+p.plot-desc {
+  font-size: 2em;
+  font-family: "Libre Baskerville";
+
+  max-width: 600px;
+
+  margin-top: -20px;
+  color: white;
 }
 
 .right-text-aling {
@@ -33,19 +41,8 @@ h3.plot-title {
   text-align-last: left;
 }
 
-p.plot-desc {
-  font-size: 2em;
-  font-family: "Libre Baskerville";
-
-  max-width: 500px;
-
-  margin-top: -20px;
-  color: white;
-}
-
 iframe {
-  /* background-color: #2d2d2d; */
-  opacity: 100%;
+  /* background-color: rgb(29, 29, 29, 0.7); */
   border-radius: 10px;
 }
 
@@ -56,6 +53,8 @@ iframe {
     justify-content: center;
     align-items: center;
     flex-direction: column-reverse;
+    background-color: rgb(45, 45, 45, 0.9);
+    border-radius: 10px;
   }
 
   .inner-plot-group {
@@ -70,9 +69,9 @@ iframe {
     font-family: "Libre Baskerville";
     font-style: italic;
     text-align: center;
-    
+
     margin-bottom: 10px;
-    color: #d93333;
+    /* color: #d93333; */
   }
 
   p.plot-desc {

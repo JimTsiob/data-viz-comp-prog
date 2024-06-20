@@ -1,96 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Problems</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/navbar.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Languages</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/navbar.css" />
+  <link rel="stylesheet" href="css/plots.css" />
+  <link rel="stylesheet" href="css/transitions.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <script src="https://code.jquery.com/jquery-3.7.1.slim.js"
+    integrity="sha256-UgvvN8vBkgO0luPSUl2s8TIlOSYRoGFAX4jlCIm9Adc=" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
+    rel="stylesheet" />
 </head>
+
 <body>
-    <script src="navbar.js"></script>
+  <script src="navbar.js"></script>
 
+  <div class="intro">
     <h1 id="headerLibre">Problems & General information</h1>
-    <p id="paragraphLibre">Conquer the code, master the competition.</p>
-    <br>
-    <br>
+    <p id="paragraphLibre">
+      Conquer the code, master the competition.
+      <br /><br />Below, we will be presenting several visualizations regarding problem solutions
+    </p>
+    </p>
+  </div>
 
-    <h2 id="font34">2 Most popular competitive programmers</h2>
-    <div id="imageContainer">
-        <img id="touristImage" src="images/tourist.png" alt="Description of image"></img>
-        <p id="imageText"> Gennady Korotkevich is a Belarussian competitive programmer,<br> 
-            also known by his alias Tourist.<br> Gennady has won major international competitions since the age of 11, <br> 
-            as well as numerous national competitions.<br><br> 
-            His top accomplishments include six consecutive gold medals in the International Olympiad in Informatics <br> 
-            as well as the world championship in the 2013 and 2015 International Collegiate Programming Contest World Finals. <br>
-            As of October 2023, Gennady was the highest-rated programmer on Codeforces, CodeChef, Topcoder, AtCoder and HackerRank. <br>
-            In January 2022, he achieved a historic rating of 3979 on Codeforces, becoming the first to break the 3900 barrier. <br>
-            His current rating is 3843 and he uses C++ 20 to solve his programming problems. <br>
-            At this time, he's studying for his PhD in ITMO, one of Russia's top universities. </p>
-            
-            
+
+  <div class="plot-group tag reverse-order-mobile">
+    <div class="inner-plot-group right-text-aling">
+      <h3 class="plot-title problem-color">Number of accepted <br>solutions per level</h3>
+      <p class="plot-desc">
+
+        The first visualization is a Pie chart with the number of accepted solutions for each difficulty level in
+        Codechef. <br>
+
+        The result shows, as expected, that the hardest level (challenge) solutions are the fewest in number due to the
+        problems' difficulty and the most accepted solutions are in the easy difficulty. This means that users who are
+        probably new to Competitive Programming do not go to beginner problems as much and instead opt for something
+        harder, to keep both the enjoyability of writing code and simultaneously learning new ways to solve problems
+        without burning their brains out.
+      </p>
     </div>
+    <!-- Diagram (Number of accepted solutions per level) -->
+    <iframe width="40%" height="600" frameborder="0" scrolling="no" src="https://plotly.com/~jimtsiob/3.embed"></iframe>
 
-    <br>
-    <br>
+  </div>
 
-    <div id="imageContainer">
-        <img id="wiliiamImage" src="images/william_lin.png" alt="Description of image"></img>
-        <p id="imageText"> William Lin is a competitive programmer from Taiwan,
-            known by the alias twilliamlin168.<br> 
-            William gained significant popularity during the COVID period, <br> 
-            through his YouTube channel and especially this video: <a href="https://www.youtube.com/watch?v=uGrBHohIgQY&t=1024s" style="color: #D93333;">Winning Google Kickstart Round A 2020 + Facecam</a> <br>
-            where he won the first round of Google's Kickstart competition within 16 minutes! <br> <br>
-            Other accomplishments include William being 2nd place in 2019 International Olympiad of Informatics (IOI) <br>
-            1st place in 2020 IOI and having a Grandmaster rank in every Competitive Programming website. <br>
-            His current rating is 2931 (International Grandmaster) in Codeforces and 2916 (7 stars) in Codechef. <br>
-            He also uses C++ 20 to solve programming problems.<br>
-            William is, at this time, studying for his MEng in Electrical Engineering and Computer Science at MIT.</p>
 
-            
-    </div>
 
-    <br>
-    <br>
-    <br>
 
-    <h2 id="font34">Number of accepted solutions per level</h2>
-    <div id="diagramContainer">
-        <p id="font20"> Below, we will be presenting several visualizations regarding problem solutions.<br> 
-            The first visualization shows a Pie chart with the number of accepted solutions for each difficulty level in Codechef. <br>
-            The result is, as expected, that the hardest level (challenge) solutions are the fewest in number due to the problems' difficulty <br>
-            and the most accepted solutions are in the easy difficulty. <br>
-            This means that users who are probably new to Competitive Programming do not go to beginner problems <br>
-            as much and instead opt for something harder, to keep both the enjoyability of writing code <br> and simultaneously learning new ways to solve problems
-            without burning their brains out.
-            </p>
-    
-        <!-- Diagram (Number of accepted solutions per level) -->
-        <iframe width="900" height="800" frameborder="0" scrolling="no" src="https://plotly.com/~jimtsiob/3.embed"></iframe>
 
-        
-    
-    
 </body>
 
 <script>
-    var a = document.getElementById("problem");
-    a.className = "active";
+  var a = document.getElementById("problem");
+  a.className = "active";
 
-    function myFunction() {
-      var x = document.getElementById("myTopnav");
-      if (x.className === "topnav") {
-        x.className += " responsive";
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+</script>
+<script>
+  $(document).on("scroll", function () {
+    var pageTop = $(document).scrollTop();
+    var pageBottom = pageTop + $(window).height();
+    var tags = $(".tag");
+
+    for (var i = 0; i < tags.length; i++) {
+      var tag = tags[i];
+
+      if ($(tag).position().top < pageBottom) {
+        $(tag).addClass("visible");
       } else {
-        x.className = "topnav";
+        $(tag).removeClass("visible");
       }
     }
-  </script>
+  });
+</script>
+
+<script>
+  const element2 = document.getElementsByClassName(
+    "pa2"
+  );
+  element2.remove();
+</script>
+
 </html>
