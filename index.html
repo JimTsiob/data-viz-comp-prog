@@ -1,73 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Main page</title>
-    <link rel="stylesheet" href="css/styles.css" />
-    <link rel="stylesheet" href="css/navbar.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <script src="navbar.js"></script>
 
-    <h1 id="headerLibre">Main page</h1>
-    <p id="paragraphLibre">Welcome to competitive programming.</p>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Main page</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/navbar.css" />
+  <link rel="stylesheet" href="css/card.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <script src="navbar.js"></script>
+
+  <h1 id="headerLibre">Main page</h1>
+  <p id="paragraphLibre">Welcome to competitive programming.</p>
+</body>
 
 
-  <h2 id="font34">2 Most popular competitive programmers</h2>
-  <div id="imageContainer">
-    <img id="touristImage" src="images/tourist.png" alt="Description of image" />
-    <p id="imageText"> Gennady Korotkevich is a Belarussian competitive programmer,<br>
-      also known by his alias Tourist.<br> Gennady has won major international competitions since the age of 11, <br>
-      as well as numerous national competitions.<br><br>
-      His top accomplishments include six consecutive gold medals in the International Olympiad in Informatics <br>
-      as well as the world championship in the 2013 and 2015 International Collegiate Programming Contest World Finals.
-      <br>
-      As of October 2023, Gennady was the highest-rated programmer on Codeforces, CodeChef, Topcoder, AtCoder and
-      HackerRank. <br>
-      In January 2022, he achieved a historic rating of 3979 on Codeforces, becoming the first to break the 3900
-      barrier. <br>
-      His current rating is 3843 and he uses C++ 20 to solve his programming problems. <br>
-      At this time, he's studying for his PhD in ITMO, one of Russia's top universities.
-    </p>
-  </div>
+<section class="group-mains">
+
+  <main>
+    <div class="card">
+      <img src="./images/tourist.jpg" alt="">
+      <div class="card-content">
+        <h2>
+          🇧🇾 Gennady Korotkevich<br>
+          🏷️aka "Tourist"<br>
+        </h2>
+        <p>
+          Gennady Korotkevich is a Belarussian competitive programmer. He has won major international competitions
+          since the age of 11, as well as numerous national competitions. His top accomplishments include six
+          consecutive
+          gold medals in the International Olympiad in Informatics as well as the world championship in the 2013 and
+          2015
+          International Collegiate Programming Contest World
+          Finals.
+          <br><br>
+          As of October 2023, Gennady was the highest-rated programmer on Codeforces, CodeChef, Topcoder, AtCoder and
+          HackerRank. In January 2022, he achieved a historic rating of 3979 on Codeforces, becoming the first to break
+          the 3900 barrier. His current rating is 3843 and he uses C++ 20 to solve his programming problems.
+          <br><br>
+          At this time, he's studying for his PhD in ITMO, one of Russia's top universities.
+        </p>
+
+      </div>
+    </div>
+  </main>
+
+  <main>
+    <div class="card">
+      <img src="./images/william_lin.jpg" alt="">
+      <div class="card-content">
+        <h2>
+          🇹🇼 William Lin<br>
+          🏷️aka "twilliamlin168"<br>
+        </h2>
+        <p>
+          William Lin is a competitive programmer from Taiwan. William gained significant popularity during the COVID
+          period, through his YouTube channel and especially this video:
+          <span href="https://www.youtube.com/watch?v=uGrBHohIgQY&t=1024s" style="color: pink;">
+            Winning Google Kickstart Round A 2020 + Facecam</span> <br>
+          where he won the first round of Google's Kickstart competition within 16 minutes! <br> <br>
+          Other accomplishments include William being 2nd place in 2019 International Olympiad of Informatics (IOI),
+          1st place in 2020 IOI and having a Grandmaster rank in every Competitive Programming website.
+          His current rating is 2931 (International Grandmaster) in Codeforces and 2916 (7 stars) in Codechef.He also
+          uses C++ 20 to solve programming problems.
+          <br><br>
+          William is, at this time, studying for his MEng in Electrical Engineering and Computer Science at MIT.
+        </p>
+
+      </div>
+    </div>
+  </main>
+</section>
 
 
-  <div id="imageContainer">
-    <img id="wiliiamImage" src="images/william_lin.png" alt="Description of image"></img>
-    <p id="imageText"> William Lin is a competitive programmer from Taiwan,
-      known by the alias twilliamlin168.<br>
-      William gained significant popularity during the COVID period, <br>
-      through his YouTube channel and especially this video: <a
-        href="https://www.youtube.com/watch?v=uGrBHohIgQY&t=1024s" style="color: #D93333;">Winning Google Kickstart
-        Round A 2020 + Facecam</a> <br>
-      where he won the first round of Google's Kickstart competition within 16 minutes! <br> <br>
-      Other accomplishments include William being 2nd place in 2019 International Olympiad of Informatics (IOI) <br>
-      1st place in 2020 IOI and having a Grandmaster rank in every Competitive Programming website. <br>
-      His current rating is 2931 (International Grandmaster) in Codeforces and 2916 (7 stars) in Codechef. <br>
-      He also uses C++ 20 to solve programming problems.<br>
-      William is, at this time, studying for his MEng in Electrical Engineering and Computer Science at MIT.</p>
-  </div>
-  
-  <script>
-    function myFunction() {
-      var x = document.getElementById("myTopnav");
-      if (x.className === "topnav") {
-        x.className += " responsive";
-      } else {
-        x.className = "topnav";
-      }
+<script>
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
     }
-  </script>
+  }
+</script>
+
 </html>
