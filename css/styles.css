@@ -8,6 +8,13 @@ body {
 	
 }
 
+.main-page-color{
+	color: #19c324;
+}
+
+.troll{
+	color: #1485d1;
+}
 
 .language-color {
 	color: #d93333;
@@ -18,7 +25,11 @@ body {
 }
 
 .time-color {
-	color: #7838df;
+	color: #1E90FF;
+}
+
+.memory-color{
+	color:#ca3dca;
 }
 
 .website-color {
