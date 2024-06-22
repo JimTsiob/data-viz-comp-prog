@@ -1,6 +1,6 @@
-level,average_time_taken
-beginner,0.27126791
-easy,0.176123158
-medium,0.635488249
-hard,1.321013921
-challenge,1.424283344
+level,average_time_taken,colors
+beginner,0.27126791,#223ba1
+easy,0.176123158,#64b06c
+medium,0.635488249,#ffdb00
+hard,1.321013921,#ffa500
+challenge,1.424283344,#f44336
