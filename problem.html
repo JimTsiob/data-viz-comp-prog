@@ -22,7 +22,7 @@
   <script src="navbar.js"></script>
 
   <div class="intro">
-    <h1 id="headerLibre" class="problem-color">Problems & General information</h1>
+    <h1 id="headerLibre" class="problem-color">Problems & Solutions</h1>
     <p id="paragraphLibre">
       Conquer the code, master the competition.
       <br /><br />Below, we will be presenting several visualizations regarding problem solutions
@@ -51,11 +51,26 @@
 
   </div>
 
-
-
+  <div class="plot-group tag">
+    <iframe width="50%" height="600" frameborder="0" scrolling="no" src="https://plotly.com/~jimtsiob/7.embed"></iframe>
+    <div class="inner-plot-group left-text-aling">
+      <h3 class="plot-title problem-color">Tested vs Untested solutions</h3>
+      <p class="plot-desc">
+        Codechef, apart from having a fully automatic pipeline that compiles, runs and tests solutions, invites experienced users to run test cases for problems manually, create solutions and compensates them with a small amount of money for it! <br>
+        With this visualization, we want to show the importance of Testing. Manual handling of test cases ensures that errors related to other factors than wrong code, such as wrong test case writing, are minimized or completely removed.<br>
+        For accepted solutions, it is apparent that we have a larger amount of tested problems, which leads to the conclusion that this difference between tested and untested accepted solutions 
+        could be poorly written automated test cases, or wrong problem statements. <br>
+        For programs that ended up with runtime-errors, tested programs are less than untested ones, indicating the advantages of manual testing.
+      </p>
+    </div>
+  </div>
 
 
 </body>
+
+<footer>
+  <h2 class="problem-color">&copy; 2024 by the Kala Mandata team, UoA</h2>
+</footer>
 
 <script>
   var a = document.getElementById("problem");

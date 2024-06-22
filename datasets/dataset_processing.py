@@ -76,4 +76,38 @@ print("Fastest language by time taken csv ready.")
 # Group by 'status' and calculate the mean of 'time_taken'
 mean_time_by_status = filtered_df_no_dashes.groupby('Status')['TimeTaken'].mean().reset_index()
 mean_time_by_status.to_csv('average_time_taken_all_statuses.csv', index=False)
-print("average time taken for all statuses csv.")
+print("average time taken for all statuses csv ready.")
+
+
+# ====================== Tested vs Untested solutions ======================
+print(filtered_df_no_dashes['Status'].unique())
+
+filtered_df_no_dashes = filtered_df_no_dashes.dropna(subset=['Status'])
+
+# Define a function to categorize statuses
+def categorize_status(status):
+    if status == 'accepted':
+        return 'accepted'
+    elif 'runtime error' in status:
+        return 'runtime error'
+    else:
+        return 'other'
+
+# Apply the function to create a new column 'GeneralStatus'
+filtered_df_no_dashes['GeneralStatus'] = filtered_df_no_dashes['Status'].apply(categorize_status)
+
+# Create a new column 'Test_Status' to indicate 'Tested' or 'Untested'
+filtered_df_no_dashes['Test_Status'] = filtered_df_no_dashes['Tester'].apply(lambda x: 'Untested' if pd.isna(x) or x == '' else 'Tested')
+
+print(filtered_df_no_dashes['Test_Status'].unique())
+
+# Filter the DataFrame to include only rows with 'accepted' or 'compilation error' status
+# filtered_df = filtered_df_no_dashes[filtered_df_no_dashes['Status'].isin(['accepted', 'runtime error(SIGXFSZ)'])]
+print(filtered_df_no_dashes['GeneralStatus'].unique())
+print(filtered_df_no_dashes['Test_Status'].unique())
+
+# Group by 'Test_Status' and 'Status' and count the occurrences
+grouped_df = filtered_df_no_dashes.groupby(['Test_Status', 'GeneralStatus']).size().reset_index(name='Count')
+
+grouped_df.to_csv('tested_vs_untested_solutions.csv', index=False)
+print('tested_vs_untested_solutions.csv ready.')
