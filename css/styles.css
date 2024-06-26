@@ -1,117 +1,164 @@
-body {
-	font-family: 'Libre Baskerville', serif;
-	background-color: #323238;
-	text-align: center;
-	width: 100%;
-	background-image: url("../images/Noise.svg");
+.main-page-color {
+  color: #ffffff;
 }
-
-.main-page-color{
-	color: #ffffff;
+.troll {
+  color: #1485d1;
 }
-
-.troll{
-	color: #1485d1;
-}
-
 .language-color {
-	color: #d93333;
+  color: #d93333;
 }
-
 .problem-color {
-	color: #23ca9b;
+  color: #23ca9b;
 }
-
 .time-color {
-	color: #1E90FF;
+  color: #1e90ff;
 }
-
-.memory-color{
-	color:#ca3dca;
+.memory-color {
+  color: #ca3dca;
 }
-
 .website-color {
-	color: #d9eb3f;
+  color: #d9eb3f;
+}
+
+body {
+  font-family: "Libre Baskerville", serif;
+  background-color: #323238;
+  text-align: center;
+  width: 100%;
+  background-image: url("../images/Noise.svg");
+}
+
+footer {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+}
+
+.index-header {
+  margin-bottom: 0;
+}
+
+.project-main {
+  margin: auto 24%;
+  color: white;
+  background-color: rgba(29, 29, 29, 0.8);
+  border-top: 2px solid white;
+}
+
+.project-header {
+  color: rgb(255, 40, 40);
+}
+
+.project-desc {
+  font-size: 3em;
+  font-family: "BPnoScript";
+  text-align: justify;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+#cp {
+  background-color: rgba(38, 38, 199, 0.7);
+  padding: 0px 10px 0px 10px;
+  border-radius: 5px;
 }
 
 .intro {
-	margin: 0px 20%;
-	display: flex;
-	justify-content: flex-start;
-	flex-direction: column;
-	align-items: flex;
-	gap: 0px;
-	margin-bottom: 200px;
+  margin: 0px 20%;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: flex;
+  gap: 0px;
+  margin-bottom: 200px;
 }
 
-#introHeader{
-	font-size: 8em;
-	white-space: pre-line;
-	font-style: italic;
-	/* color: #D93333; */
-	margin-top: 250px;
+#introHeader {
+  font-size: 10em;
+  white-space: pre-line;
+  font-style: italic;
+  /* color: #D93333; */
+  margin-top: 250px;
 }
 
-#headerLibre{
-	font-size: 6em;
-	font-style: italic;
-	/* color: #D93333; */
-	margin-top: 250px;
+#headerLibre {
+  font-size: 6em;
+  font-style: italic;
+  /* color: #D93333; */
+  margin-top: 250px;
 }
 
 #paragraphLibre {
-	font-size: 3em;
-	max-width: 70%;
-	margin: 15px auto;
-	color: #ffffff;
-	text-align: justify;
-	text-align-last: center;
-  }
-
+  font-size: 3em;
+  max-width: 70%;
+  margin: 15px auto;
+  color: #ffffff;
+  text-align: justify;
+  text-align-last: center;
+}
 
 /* Tablet code */
 @media (max-width: 1024px) {
-	#paragraphLibre {
-		font-size: 2.5em;
-		max-width: 80%;
-		margin: 5px auto;
-		color: #ffffff;
-		text-align: center;
-	  }
+  #paragraphLibre {
+    font-size: 2.5em;
+    max-width: 80%;
+    margin: 5px auto;
+    color: #ffffff;
+    text-align: center;
+  }
 }
 
-@media (max-width: 1000px){
-	iframe {
-        width: 100%;
-        height: 500px;
-    }
+@media (max-width: 1000px) {
+  iframe {
+    width: 100%;
+    height: 500px;
+  }
 }
 
 /* Mobile phone code */
 @media (max-width: 600px) {
+  
+  #introHeader {
+    font-size: 6em;
+    /* color: #D93333; */
+    margin-top: 150px;
+  }
+  
+  .project-desc {
+    font-size: 2.1em;
+    font-family: "BPnoScript";
+    text-align: justify;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
 
-	.intro {
-		margin: 10% 0%;
-		display: flex;
-		justify-content: flex-start;
-		flex-direction: column;
-		align-items: flex;
-		gap: 0px;
-	
-	  }
+  .project-main {
+    margin: auto 8%;
+    color: white;
+    background-color: rgba(29, 29, 29, 0.8);
+    border-top: 2px solid white;
+  }
 
-	#headerLibre{
-		font-size: 3em;
-		font-style: italic;
-		/* color: #D93333; */
-		margin-top: 130px;
-	}
+  .intro {
+    margin: 10% 0%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex;
+    gap: 0px;
+  }
 
-	#paragraphLibre {
-		font-size: 2em;
-		max-width: 70%;
-		margin: 5px auto;
-		color: #ffffff;
-		text-align: center;
-	  }
+  #headerLibre {
+    font-size: 3em;
+    font-style: italic;
+    /* color: #D93333; */
+    margin-top: 130px;
+  }
+
+  #paragraphLibre {
+    font-size: 2em;
+    max-width: 70%;
+    margin: 5px auto;
+    color: #ffffff;
+    text-align: center;
+  }
 }
