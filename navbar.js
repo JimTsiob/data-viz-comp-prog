@@ -1,4 +1,5 @@
-document.write('\
+document.write(
+  '\
 <div class="topnav" id="myTopnav"> \
   <a href="./index.html"> \
     <div class="index">\
@@ -37,9 +38,15 @@ document.write('\
       <div>website</div> \
     </div> \
   </a> \
+  <a id="credits" href="./credits.html">\
+    <div class="selected"> \
+      <img class="nav_img" src="images/credits.png" width="40px" height="auto" /> \
+      <div>credits</div> \
+    </div> \
+  </a> \
   <a href="javascript:void(0);" class="icon" onclick="myFunction()"> \
     <i class="fa fa-bars"></i> \
   </a> \
 </div> \
-');
-
+'
+);

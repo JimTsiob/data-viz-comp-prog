@@ -1,0 +1,76 @@
+.credits-flexbox {
+    width: 80%;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    flex-direction: row;
+    font-family: "BpnoScript-Bold";
+
+}
+
+.flex-child {
+    width: 350px;
+    height: 420px;
+    padding: 10px;
+
+    border-radius: 3px;
+
+    border: 1px solid rgb(255, 255, 255);
+    background-color: rgba(29, 29, 29);
+    
+    background-image: url("../images/ooorganize.svg");
+    background-size: 30%;
+
+    transition: .5s;
+    opacity: 1;
+
+}
+
+.credits-content {
+    width: 90%;
+    margin: 0 auto;
+    padding: 5px;
+
+    
+    text-align: center;
+    color: white;
+    font-size: large;
+    font-size: 1.5em;
+    
+    border: 1px solid white;
+    border-radius: 0px;
+    background-color: rgb(255, 255, 255, 0.3);
+    backdrop-filter: blur(0px);
+
+    transition: .5s;
+}
+
+div.flex-child:hover + *{
+    opacity: 0.5;
+}
+
+div.flex-child:hover + * + *{
+    opacity: 0.5;
+}
+
+div.flex-child:has(+ *:hover){
+    opacity: 0.5;
+}
+
+div.flex-child:has(+ * + *:hover){
+    opacity: 0.5;
+}
+
+div.flex-child:hover > .credits-content{
+    backdrop-filter: blur(5px);
+    
+}
+
+.credits-h1 {
+    color: white;
+    font-size: 2em;
+}
