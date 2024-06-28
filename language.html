@@ -1,131 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Languages</title>
-    <link rel="stylesheet" href="css/styles.css" />
-    <link rel="stylesheet" href="css/navbar.css" />
-    <link rel="stylesheet" href="css/plots.css" />
-    <link rel="stylesheet" href="css/transitions.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <script
-      src="https://code.jquery.com/jquery-3.7.1.slim.js"
-      integrity="sha256-UgvvN8vBkgO0luPSUl2s8TIlOSYRoGFAX4jlCIm9Adc="
-      crossorigin="anonymous"
-    ></script>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <script src="navbar.js"></script>
 
-    <div class="intro">
-      <h1 id="headerLibre" class="language-color">Programming Languages</h1>
-      <p id="paragraphLibre">
-        If coding is war, programming language is the weapon. <br /><br />We
-        start by showcasing charts about the languages used in competitive
-        programming.
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Languages</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/navbar.css" />
+  <link rel="stylesheet" href="css/plots.css" />
+  <link rel="stylesheet" href="css/transitions.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <script src="https://code.jquery.com/jquery-3.7.1.slim.js"
+    integrity="sha256-UgvvN8vBkgO0luPSUl2s8TIlOSYRoGFAX4jlCIm9Adc=" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <script src="navbar.js"></script>
+
+  <div class="intro">
+    <h1 id="headerLibre" class="language-color">Programming Languages</h1>
+    <p id="paragraphLibre">
+      This page contains diagrams related to the programming languages that users picked
+      to solve the problems. Generally, four are mostly picked among others which makes
+      sense due to their speed and their pre-existing popularity. We must note that some
+      languages with low usage couldn't be presented in a clean way and were ruining the
+      general image of the visualization. For that, we grouped all these in a single category
+      and called it <i>OTHER</i>. This is not a problem because we wanted to visualize the bigger
+      picture.
+    </p>
+  </div>
+
+  <div class="plot-group tag reverse-order-mobile">
+    <div class="inner-plot-group right-text-aling">
+      <h3 class="plot-title language-color">Lines Of Code per language</h3>
+      <p class="plot-desc">
+        As the title says, this bar chart visualizes how many Lines Of Code (LOC) on average a solution
+        written in a language needs. Results are presented in ascending order, starting with TEXT and
+        finishing with C++. TEXT is nothing more than a simple text file that CodeChef accepts as solution
+        for a specific category of problems. The top 3 languages with the most lines are C++ followed by JAVA
+        and C. These is because of their verbose nature to express things when writing code.
+        <br><br>
+        Of course, this metric can be influenced by the personal style of each developer. For example, one may put new
+        line after opening left curly bracket, or break the code into small methods which results in more lines. One
+        more possible factor is that users coding in those languages engage more often in harder problems that require
+        lengthier solutions.
       </p>
     </div>
+    <iframe width="40%" height="700" frameborder="0" scrolling="no" src="//plotly.com/~loukaspap/1.embed"></iframe>
+  </div>
 
-    <div class="plot-group tag reverse-order-mobile">
-      <div class="inner-plot-group right-text-aling">
-        <h3 class="plot-title language-color">Lines Of Code per language</h3>
-        <p class="plot-desc">
-          Analysis of visuaization for languages. Testing my visualization with
-          a neat description. Go team 1! 📊
-        </p>
-      </div>
-      <iframe
-        width="40%"
-        height="600"
-        frameborder="0"
-        scrolling="no"
-        src="//plotly.com/~loukaspap/1.embed"
-      ></iframe>
+  <div class="plot-group tag">
+    <iframe width="40%" height="600" frameborder="0" scrolling="no" src="//plotly.com/~loukaspap/4.embed"></iframe>
+    <div class="inner-plot-group left-text-aling">
+      <h3 class="plot-title language-color">Solution per language</h3>
+      <p class="plot-desc">
+        Donut chart, yummy. In the center we put extra information. Go team 1!
+        📊
+      </p>
     </div>
+  </div>
 
-    <div class="plot-group tag">
-      <iframe
-        width="40%"
-        height="600"
-        frameborder="0"
-        scrolling="no"
-        src="//plotly.com/~loukaspap/4.embed"
-      ></iframe>
-      <div class="inner-plot-group left-text-aling">
-        <h3 class="plot-title language-color">Solution per language</h3>
-        <p class="plot-desc">
-          Donut chart, yummy. In the center we put extra information. Go team 1!
-          📊
-        </p>
-      </div>
+  <div class="plot-group tag reverse-order-mobile">
+    <div class="inner-plot-group right-text-aling">
+      <h3 class="plot-title language-color">Users changed languages</h3>
+      <p class="plot-desc">
+        Analysis of visuaization for languages. Testing my visualization with
+        a neat description. Go team 1! 📊
+      </p>
     </div>
+    <iframe width="30%" height="700" frameborder="0"
+      src="https://observablehq.com/embed/@loukas/chord-diagram-lang@200?cells=chart"></iframe>
+  </div>
+</body>
 
-    <div class="plot-group tag reverse-order-mobile">
-      <div class="inner-plot-group right-text-aling">
-        <h3 class="plot-title language-color">Users changed languages</h3>
-        <p class="plot-desc">
-          Analysis of visuaization for languages. Testing my visualization with
-          a neat description. Go team 1! 📊
-        </p>
-      </div>
-      <iframe
-        width="30%"
-        height="700"
-        frameborder="0"
-        src="https://observablehq.com/embed/@loukas/chord-diagram-lang@200?cells=chart"
-      ></iframe>
-    </div>
-  </body>
+<footer>
+  <h2>&copy; 2024 by the Kala Mandata team, UoA</h2>
+</footer>
 
-  <footer>
-    <h2>&copy; 2024 by the Kala Mandata team, UoA</h2>
-  </footer>
+<script>
+  var a = document.getElementById("language");
+  a.className = "active";
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+</script>
 
-  <script>
-    var a = document.getElementById("language");
-    a.className = "active";
-    function myFunction() {
-      var x = document.getElementById("myTopnav");
-      if (x.className === "topnav") {
-        x.className += " responsive";
+<script>
+  $(document).on("scroll", function () {
+    var pageTop = $(document).scrollTop();
+    var pageBottom = pageTop + $(window).height();
+    var tags = $(".tag");
+
+    for (var i = 0; i < tags.length; i++) {
+      var tag = tags[i];
+
+      if ($(tag).position().top < pageBottom) {
+        $(tag).addClass("visible");
       } else {
-        x.className = "topnav";
+        $(tag).removeClass("visible");
       }
     }
-  </script>
+  });
+</script>
 
-  <script>
-    $(document).on("scroll", function () {
-      var pageTop = $(document).scrollTop();
-      var pageBottom = pageTop + $(window).height();
-      var tags = $(".tag");
+<script>
+  const element2 = document.getElementsByClassName(
+    "pa2"
+  );
+  element2.remove();
+</script>
 
-      for (var i = 0; i < tags.length; i++) {
-        var tag = tags[i];
-
-        if ($(tag).position().top < pageBottom) {
-          $(tag).addClass("visible");
-        } else {
-          $(tag).removeClass("visible");
-        }
-      }
-    });
-  </script>
-
-  <script>
-    const element2 = document.getElementsByClassName(
-      "pa2"
-    );
-    element2.remove();
-  </script>
 </html>
