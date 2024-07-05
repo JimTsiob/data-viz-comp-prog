@@ -24,8 +24,9 @@ body {
   font-family: "Libre Baskerville", serif;
   background-color: #323238;
   text-align: center;
-  width: 100%;
+  /* width: 100%; */
   background-image: url("../images/Noise.svg");
+  background-repeat: repeat;
 }
 
 footer {
@@ -56,6 +57,12 @@ footer {
   /* color: #D93333; */
   margin-top: 200px;
   margin-bottom: 50px;
+}
+
+.small-header {
+  font-family: BPnoScript;
+  font-size: 2em;
+  max-width: 95%;
 }
 
 .project-desc {

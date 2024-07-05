@@ -10,7 +10,7 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 50px;
+  margin: 20px 50px;
   font-family: 'Roboto', sans-serif;
   text-align: start;
 }
@@ -82,4 +82,17 @@ main {
 
 .material-symbols-outlined {
   vertical-align: middle;
+}
+
+@media (max-width: 600px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px;
+    font-family: 'Roboto', sans-serif;
+    text-align: start;
+  }
+
 }
