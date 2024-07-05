@@ -60,14 +60,16 @@ footer {
 }
 
 .small-header {
-  font-family: BPnoScript;
+  font-family: "Josefin Sans";
   font-size: 2em;
+  font-weight: 300;
   max-width: 95%;
 }
 
 .project-desc {
   font-size: 2.5em;
-  font-family: "BPnoScript";
+  font-family: "Josefin Sans";
+  font-weight: 300;
   text-align: justify;
   padding-left: 5%;
   padding-right: 5%;
@@ -142,7 +144,7 @@ footer {
   
   .project-desc {
     font-size: 2.1em;
-    font-family: "BPnoScript";
+    font-family: "Josefin Sans";
     text-align: justify;
     padding-left: 5%;
     padding-right: 5%;

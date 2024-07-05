@@ -8,21 +8,25 @@
     flex-wrap: wrap;
     gap: 10px;
     flex-direction: row;
-    font-family: "BpnoScript-Bold";
+    font-family: "Josefin Sans";
+
 
 }
 
 .flex-child {
     width: 350px;
     height: 100%;
+    
+    font-weight: 400;
+    /* font-size: 1.2em; */
+
     padding: 10px;
     padding-bottom: 30px;
-
+    
     border-radius: 3px;
 
     border: 1px solid rgb(255, 255, 255);
     background-color: rgba(29, 29, 29);
-    
     background-image: url("../images/ooorganize.svg");
     background-size: 30%;
 
