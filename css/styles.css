@@ -79,6 +79,10 @@ footer {
   border-radius: 5px;
 }
 
+#fullPlotLink:visited{
+  color: greenyellow;
+}
+
 .intro {
   margin: 0px 20%;
   display: flex;
