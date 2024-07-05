@@ -82,6 +82,13 @@ footer {
   margin-bottom: 200px;
 }
 
+#introHeader {
+  font-size: 8em;
+  white-space: pre-line;
+  font-style: italic;
+  /* color: #D93333; */
+  margin-top: 200px;
+}
 
 #headerLibre {
   font-size: 6em;
