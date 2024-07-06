@@ -7,6 +7,9 @@ document.write(
       <t style="color: #d93333"> mandata </t>\
     </div> \
   </a> \
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()"> \
+    <i class="fa fa-bars"></i> \
+  </a> \
   <div class="vl"></div> \
   <a id="language" href="./language.html"> \
     <div class="selected"> \
@@ -43,9 +46,6 @@ document.write(
       <img class="nav_img" src="images/credits.png" width="40px" height="auto" /> \
       <div>credits</div> \
     </div> \
-  </a> \
-  <a href="javascript:void(0);" class="icon" onclick="myFunction()"> \
-    <i class="fa fa-bars"></i> \
   </a> \
 </div> \
 '

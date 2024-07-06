@@ -16,6 +16,8 @@
     integrity="sha256-UgvvN8vBkgO0luPSUl2s8TIlOSYRoGFAX4jlCIm9Adc=" crossorigin="anonymous"></script>
   <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
     rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
@@ -36,13 +38,35 @@
 
   <div class="plot-group tag reverse-order-mobile">
     <div class="inner-plot-group right-text-aling">
+      <h3 class="plot-title language-color">Solution per language</h3>
+      <p class="plot-desc">
+        To get a quick overview, we start by investigating which languages are mostly picked among programmers to solve
+        these problems. This, would indirectly show us which ones are more suitable for competitive programming.
+        <br><br>
+        As one can see in the donut chart, C++ is used in most solutions with 51.1% and then goes C with 29.1%. Both
+        languages are known for their good time performance. Next come JAVA and PYTHON. We understand that competitive
+        programmers code with languages that are faster even though they have more verbosity instead of coding with
+        syntactically simpler ones but being slower (like PYTHON). We can also note that OOP (Object Oriented
+        Programming) languages are choosed over functional. In the middle, we put the total number of submissions which
+        is 1,008,078.
+      </p>
+    </div>
+    <iframe width="50%" height="700" frameborder="0" scrolling="no" src="//plotly.com/~loukaspap/4.embed"></iframe>
+
+  </div>
+
+  <div class="plot-group tag">
+    <iframe width="50%" height="700" frameborder="0" scrolling="no" src="//plotly.com/~loukaspap/1.embed"></iframe>
+    <div class="inner-plot-group left-text-aling">
       <h3 class="plot-title language-color">Lines Of Code per language</h3>
       <p class="plot-desc">
-        As the title says, this bar chart visualizes how many Lines Of Code (LOC) on average a solution
-        written in a language needs. Results are presented in ascending order, starting with TEXT and
-        finishing with C++. TEXT is nothing more than a simple text file that CodeChef accepts as solution
-        for a specific category of problems. The top 3 languages with the most lines are C++ followed by JAVA
-        and C. These is because of their verbose nature to express things when writing code.
+        As the title says, this bar chart visualizes how many Lines of Code (LoC) on average are written with a
+        language.
+        <br><br>
+        Results are presented in ascending order, starting with TEXT and finishing with C++. TEXT is nothing
+        more than a simple text file that CodeChef accepts as solution for a specific category of problems. The 3
+        languages with the most lines are C++ followed by JAVA and C. These is because of their verbose nature to
+        express things when writing code. Opposingly, TCL, HASK and PERL have the fewer LoC.
         <br><br>
         Of course, this metric can be influenced by the personal style of each developer. For example, one may put new
         line after opening left curly bracket, or break the code into small methods which results in more lines. One
@@ -50,25 +74,26 @@
         lengthier solutions.
       </p>
     </div>
-    <iframe width="40%" height="700" frameborder="0" scrolling="no" src="//plotly.com/~loukaspap/1.embed"></iframe>
   </div>
 
-  <div class="plot-group tag">
-    <iframe width="40%" height="700" frameborder="0" scrolling="no" src="//plotly.com/~loukaspap/4.embed"></iframe>
-    <div class="inner-plot-group left-text-aling">
-      <h3 class="plot-title language-color">Solution per language</h3>
-      <p class="plot-desc">
-        Donut chart
-      </p>
-    </div>
-  </div>
+
 
   <div class="plot-group tag reverse-order-mobile">
     <div class="inner-plot-group right-text-aling">
-      <h3 class="plot-title language-color">Users changed languages</h3>
+      <h3 class="plot-title language-color">Changed Preferences</h3>
       <p class="plot-desc">
-        Analysis of visuaization for languages. Testing my visualization with
-        a neat description. Go team 1! 📊
+        For the final visualization of this section, we found interesting to see how many users moved from their initial
+        coding language to another. The Chord chart was the best fit for this purpose. Hovering over a line displays
+        details.
+        <br><br>
+        In general, most programmers that started with a language, kept coding in it. C++ was the language to welcome
+        the most newcomers from other languages while keeping its majority of users (almost 22,000). 5,508 programmers
+        changed from C to C++, probably because the latter is a superset of the former, so the transition was not
+        difficult. In contrast, 1,751 people moved from C++ to C. "Population exchanges" between the rest of the
+        languages ranged from 0 to 800.
+        <br><br>
+        To measure this, we kept for each competitor his first and last submission based on datetime from all problems
+        and checked if there was a change in the language he used.
       </p>
     </div>
     <iframe width="30%" height="700" frameborder="0"

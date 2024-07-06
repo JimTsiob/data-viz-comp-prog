@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-<<head>
+
+<head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Website</title>
@@ -15,82 +16,103 @@
     integrity="sha256-UgvvN8vBkgO0luPSUl2s8TIlOSYRoGFAX4jlCIm9Adc=" crossorigin="anonymous"></script>
   <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
     rel="stylesheet" />
-  </head>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+    rel="stylesheet">
+</head>
 
-  <body>
-    <script src="navbar.js"></script>
+<body>
+  <script src="navbar.js"></script>
 
-    <div class="intro">
-      <h1 id="headerLibre" class="website-color">Website</h1>
-      <p id="paragraphLibre">
-        Content for website visualization <br /><br />\\{-_-}//
+  <div class="intro">
+    <h1 id="headerLibre" class="website-color">Website Analytics</h1>
+    <p id="paragraphLibre">
+      The last category of visualizations is different from the previous ones in terms that it provides information
+      relative to the website itself and not competitive programming. This knowledge can be used from CodeChef's teams
+      to help its decision making ability in order to expand its market share.
+
+    </p>
+  </div>
+
+  <div class="plot-group tag reverse-order-mobile">
+    <div class="inner-plot-group right-text-aling">
+      <h3 class="plot-title website-color">Activity per month and new problems</h3>
+      <p class="plot-desc">
+        With the line chart we visualize how much the user activity on the website has increased from 2009 until 2016
+        while showing how many new problems were created every month. In our case, activity for a month is the sum of
+        the unique visits of users each day of the specific month. We count one visit for a user if there is at least
+        one solution submission by him.
+        <br><br>
+        It is obvious that as the time passed the number of users got bigger, thus the site gained popularity. Starting
+        with under 200 users, there was a steady increase each year with few and small "downs". From May 2013 where
+        visitors surpassed 1,000, activity started blooming, touching almost 6000 on August 2015. This could have
+        happened because of the new content that was added the past 3-4 months. If we notice the peaks of both
+        timelines, there is a good chance that a corellation exists between these two.
       </p>
     </div>
+    <iframe width="50%" height="700" frameborder="0" scrolling="no" src="//plotly.com/~loukaspap/6.embed"></iframe>
+  </div>
+  </div>
 
-    <div class="plot-group tag reverse-order-mobile">
-      <div class="inner-plot-group right-text-aling">
-        <h3 class="plot-title website-color">Activity per month</h3>
-        <p class="plot-desc">
-          Replace with text and replace iframe src
-        </p>
-      </div>
-      <iframe width="50%" height="600" frameborder="0" scrolling="no" src="//plotly.com/~loukaspap/6.embed"></iframe>
+  <div class="plot-group tag">
+    <iframe width="50%" height="700" frameborder="0" scrolling="no" src="//plotly.com/~loukaspap/8.embed"></iframe>
+    <div class="inner-plot-group left-text-aling">
+      <h3 class="plot-title website-color">Traffic per hour</h3>
+      <p class="plot-desc">
+        It is important for a company to know at which time of the day the site has the highest traffic of users. This
+        opens opportunities to improve its marketing, like for example to pick a time with high activity to roll out a
+        new promotion or announcement and gain more attention. That's why we visualize with a stacked bar chart how
+        many users were active on the website for each hour of the day from 2009 to 2016.
+        <br><br>
+        We see for all years that from noon hours and after, the traffic is increased. The main peak hour is before
+        midnight at 23:00 which is not surprising because a lot of programmers code at night. As the dawn is coming,
+        activity is decreasing almost in half every hour.
+      </p>
     </div>
-    </div>
+  </div>
+</body>
 
-    <div class="plot-group tag">
-      <iframe width="50%" height="600" frameborder="0" scrolling="no" src="//plotly.com/~loukaspap/8.embed"></iframe>
-      <div class="inner-plot-group left-text-aling">
-        <h3 class="plot-title website-color">Traffic per hour</h3>
-        <p class="plot-desc">
-          Replace with text and replace iframe src
-        </p>
-      </div>
-    </div>
-  </body>
+<footer>
+  <h2>&copy; 2024 by the Kala Mandata team, UoA</h2>
+</footer>
 
-  <footer>
-    <h2>&copy; 2024 by the Kala Mandata team, UoA</h2>
-  </footer>
+<script>
+  var a = document.getElementById("website");
+  a.className = "active";
 
-  <script>
-    var a = document.getElementById("website");
-    a.className = "active";
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+</script>
 
-    function myFunction() {
-      var x = document.getElementById("myTopnav");
-      if (x.className === "topnav") {
-        x.className += " responsive";
+
+<script>
+  $(document).on("scroll", function () {
+    var pageTop = $(document).scrollTop();
+    var pageBottom = pageTop + $(window).height();
+    var tags = $(".tag");
+
+    for (var i = 0; i < tags.length; i++) {
+      var tag = tags[i];
+
+      if ($(tag).position().top < pageBottom) {
+        $(tag).addClass("visible");
       } else {
-        x.className = "topnav";
+        $(tag).removeClass("visible");
       }
     }
-  </script>
+  });
+</script>
 
-
-  <script>
-    $(document).on("scroll", function () {
-      var pageTop = $(document).scrollTop();
-      var pageBottom = pageTop + $(window).height();
-      var tags = $(".tag");
-
-      for (var i = 0; i < tags.length; i++) {
-        var tag = tags[i];
-
-        if ($(tag).position().top < pageBottom) {
-          $(tag).addClass("visible");
-        } else {
-          $(tag).removeClass("visible");
-        }
-      }
-    });
-  </script>
-
-  <script>
-    const element2 = document.getElementsByClassName(
-      "pa2"
-    );
-    element2.remove();
-  </script>
+<script>
+  const element2 = document.getElementsByClassName(
+    "pa2"
+  );
+  element2.remove();
+</script>
 
 </html>

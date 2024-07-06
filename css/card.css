@@ -10,7 +10,7 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 50px;
+  margin: 20px 50px;
   font-family: 'Roboto', sans-serif;
   text-align: start;
 }
@@ -56,11 +56,9 @@ main {
     opacity: 0;
     max-width: 80%;
     transition: opacity .3s ease-out;
-  }
-  
-  p, a {
     inset: 70px auto 80px 30px;
   }
+  
   
 
   &:hover h2 {
@@ -82,4 +80,50 @@ main {
 
 .material-symbols-outlined {
   vertical-align: middle;
+}
+
+@media (max-width: 600px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px;
+    font-family: 'Roboto', sans-serif;
+    text-align: start;
+  }
+
+  .card {
+    width: 20rem;
+    height: 55rem;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    color: white;
+    box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+
+    h2 {
+      position: absolute;
+      inset: 500px 50px 30px 30px;
+      margin: 0;
+      transition: inset .3s .3s ease-out;
+      font-family: 'Roboto Condensed', sans-serif;
+      font-weight: normal;
+      text-transform: uppercase;
+    }
+
+    p, a {
+      font-size: 1.1em;
+      position: absolute;
+      opacity: 0;
+      max-width: 80%;
+      transition: opacity .3s ease-out;
+      inset: 100px auto 80px 30px; 
+    }
+  }
+
+
+  
+
 }

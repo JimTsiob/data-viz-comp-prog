@@ -24,8 +24,9 @@ body {
   font-family: "Libre Baskerville", serif;
   background-color: #323238;
   text-align: center;
-  width: 100%;
+  /* width: 100%; */
   background-image: url("../images/Noise.svg");
+  background-repeat: repeat;
 }
 
 footer {
@@ -49,9 +50,26 @@ footer {
   color: rgb(255, 40, 40);
 }
 
+#introHeader {
+  font-size: 8em;
+  white-space: pre-line;
+  font-style: italic;
+  /* color: #D93333; */
+  margin-top: 200px;
+  margin-bottom: 50px;
+}
+
+.small-header {
+  font-family: "Josefin Sans";
+  font-size: 2em;
+  font-weight: 300;
+  max-width: 95%;
+}
+
 .project-desc {
   font-size: 2.5em;
-  font-family: "BPnoScript";
+  font-family: "Josefin Sans";
+  font-weight: 300;
   text-align: justify;
   padding-left: 5%;
   padding-right: 5%;
@@ -61,6 +79,10 @@ footer {
   background-color: rgba(38, 38, 199, 0.7);
   padding: 0px 5px 0px 5px;
   border-radius: 5px;
+}
+
+#fullPlotLink:visited{
+  color: greenyellow;
 }
 
 .intro {
@@ -97,6 +119,14 @@ footer {
   text-align-last: center;
 }
 
+.full-dataset {
+  background-color:rgb(160, 160, 160);
+  color: white;
+  border-radius: 5px;
+  padding: 0 5px;
+}
+
+
 /* Tablet code */
 @media (max-width: 1024px) {
   #paragraphLibre {
@@ -126,7 +156,7 @@ footer {
   
   .project-desc {
     font-size: 2.1em;
-    font-family: "BPnoScript";
+    font-family: "Josefin Sans";
     text-align: justify;
     padding-left: 5%;
     padding-right: 5%;
