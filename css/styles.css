@@ -119,6 +119,14 @@ footer {
   text-align-last: center;
 }
 
+.full-dataset {
+  background-color:rgb(160, 160, 160);
+  color: white;
+  border-radius: 5px;
+  padding: 0 5px;
+}
+
+
 /* Tablet code */
 @media (max-width: 1024px) {
   #paragraphLibre {

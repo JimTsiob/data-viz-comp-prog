@@ -26,8 +26,9 @@
   <div class="intro">
     <h1 id="headerLibre" class="problem-color">Problems & Solutions</h1>
     <p id="paragraphLibre">
-      Conquer the code, master the competition.
-      <br /><br />Below, we will be presenting several visualizations regarding problem solutions
+      Continuing with the second category, Problems & Solutions refer to visualizations that provide information about
+      the users' answers and the quality of the problems themselves. We are investigating some reasons why programmers
+      may or may not perform well when writing code.
     </p>
     </p>
   </div>
@@ -35,40 +36,38 @@
 
   <div class="plot-group tag reverse-order-mobile">
     <div class="inner-plot-group right-text-aling">
-      <h3 class="plot-title problem-color">Number of accepted <br>solutions per level</h3>
+      <h3 class="plot-title problem-color">Number of accepted solutions per level</h3>
       <p class="plot-desc">
-
         The first visualization is a Pie chart with the number of accepted solutions for each difficulty level in
-        Codechef. <br>
-
-        The result shows, as expected, that the hardest level (challenge) solutions are the fewest in number due to the
-        problems' difficulty and the most accepted solutions are in the easy difficulty. This means that users who are
-        probably new to Competitive Programming do not go to beginner problems as much and instead opt for something
+        Codechef.
+        <br><br>
+        The result shows, as expected, that the hardest level's (challenge) solutions are the fewest in number due to
+        the problems' difficulty and the most accepted solutions are in the easy difficulty. This means that users who
+        are probably new to Competitive Programming do not go to beginner problems as much and instead opt for something
         harder, to keep both the enjoyability of writing code and simultaneously learning new ways to solve problems
         without burning their brains out.
       </p>
     </div>
     <!-- Diagram (Number of accepted solutions per level) -->
-    <iframe width="40%" height="600" frameborder="0" scrolling="no" src="https://plotly.com/~jimtsiob/3.embed"></iframe>
+    <iframe width="50%" height="700" frameborder="0" scrolling="no" src="https://plotly.com/~jimtsiob/3.embed"></iframe>
 
   </div>
 
   <div class="plot-group tag">
-    <iframe width="50%" height="600" frameborder="0" scrolling="no" src="https://plotly.com/~jimtsiob/7.embed"></iframe>
+    <iframe width="50%" height="700" frameborder="0" scrolling="no" src="https://plotly.com/~jimtsiob/7.embed"></iframe>
     <div class="inner-plot-group left-text-aling">
       <h3 class="plot-title problem-color">Tested vs Untested solutions</h3>
       <p class="plot-desc">
         Codechef, apart from having a fully automatic pipeline that compiles, runs and tests solutions, invites
         experienced users to run test cases for problems manually, create solutions and compensates them with a small
-        amount of money for it! <br>
-        With this visualization, we want to show the importance of Testing. Manual handling of test cases ensures that
-        errors related to other factors than wrong code, such as wrong test case writing, are minimized or completely
-        removed.<br>
+        amount of money for it. With this visualization, we want to show the importance of Testing. Manual handling of
+        test cases ensures that errors related to other factors than wrong code, such as wrong test case writing, are
+        minimized or completely removed.
+        <br><br>
         For accepted solutions, it is apparent that we have a larger amount of tested problems, which leads to the
-        conclusion that this difference between tested and untested accepted solutions
-        could be poorly written automated test cases, or wrong problem statements. <br>
-        For programs that ended up with runtime-errors, tested programs are less than untested ones, indicating the
-        advantages of manual testing.
+        conclusion that this difference between tested and untested accepted solutions could be a result of poorly
+        written automated test cases, or wrong problem statements. For programs that ended up with runtime-errors,
+        tested programs are less than untested ones, indicating the advantages of manual testing.
       </p>
     </div>
   </div>
@@ -77,17 +76,22 @@
     <div class="inner-plot-group right-text-aling">
       <h3 class="plot-title problem-color">Most difficult problems - Top 25</h3>
       <p class="plot-desc">
-
-        Problems in codechef have two labels that distinguish them from each other, difficulty and tags. <br>
-        Tags represent the type of algorithms that are required to solve a problem. The diagram shows the percentage of accepted solutions for each tag. <br>
-        It is apparent that problems that relate to recursion and prime numbers are the most difficult to solve due to the low percentage of their solutions
-        while problems that relate to tries (special type of tree data structure), sorting and segment trees are easier to solve. <br>
-        Overall, difficulty in the shown tags is high. The diagram shows that these problems have low percentages of accepted solutions in general, which means they're pretty difficult to solve.<br>
-        For all the tags you may take a look here: <a href="https://chart-studio.plotly.com/~loukaspap/12/#data">full plot</a>  
+        Problems in codechef have two labels that distinguish them from each other, difficulty and tags. Tags represent
+        the type of algorithms that are required to solve a problem. The diagram shows the percentage of accepted
+        solutions for each tag.
+        <br><br>
+        It is apparent that problems that relate to recursion and prime numbers are the most difficult to solve due to
+        the low percentage of their solutions while problems that relate to tries (special type of tree data structure),
+        sorting and segment trees are easier to solve.
+        <br><br>
+        Overall, difficulty in the shown tags is high. The diagram shows that these problems have low percentages of
+        accepted solutions in general, which means they're pretty difficult to solve. 
+        <br><br>
+        For all the tags you may take a look <a class="full-dataset" target="_blank" href="https://chart-studio.plotly.com/~loukaspap/12/#data">here</a>.
       </p>
     </div>
     <!-- https://chart-studio.plotly.com/~loukaspap/12/#data -->
-    <iframe width="40%" height="600" frameborder="0" scrolling="no"
+    <iframe width="50%" height="700" frameborder="0" scrolling="no"
       src="https://plotly.com/~loukaspap/12.embed"></iframe>
   </div>
 
