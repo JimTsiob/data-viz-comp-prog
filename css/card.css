@@ -10,7 +10,7 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 20px 50px;
+  margin: 20px 30px;
   font-family: 'Roboto', sans-serif;
   text-align: start;
 }
