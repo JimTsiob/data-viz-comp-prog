@@ -23,7 +23,6 @@
 
 .index {
   text-align: end;
-  /* margin-right: 10px; */
   font-size: 1.2em;
   transition: 0.5s;
 }
@@ -53,7 +52,7 @@
   text-align: center;
   text-decoration: none;
   font-size: 1.2em;
-  font-family: "Josefin Sans";
+  font-family: "Libre Baskerville";
   font-weight: 350;
 }
 

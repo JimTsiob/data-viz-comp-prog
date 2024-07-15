@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Languages</title>
+  <title>Competitive Programming Visualizations - Languages</title>
   <link rel="stylesheet" href="css/styles.css" />
   <link rel="stylesheet" href="css/navbar.css" />
   <link rel="stylesheet" href="css/plots.css" />
@@ -24,54 +24,45 @@
   <script src="navbar.js"></script>
 
   <div class="intro">
-    <h1 id="headerLibre" class="language-color">Programming Languages</h1>
+    <h1 id="headerLibre" class="language-color">If programming is war, <br>coding languages are the weapons</h1>
     <p id="paragraphLibre">
       This page contains diagrams related to the programming languages that users picked
       to solve the problems. Generally, four are mostly picked among others which makes
-      sense due to their speed and their pre-existing popularity. We must note that some
-      languages with low usage couldn't be presented in a clean way and were ruining the
-      general image of the visualization. For that, we grouped all these in a single category
-      and called it <i>OTHER</i>. This is not a problem because we wanted to visualize the bigger
-      picture.
+      sense due to their speed and their pre-existing popularity.
     </p>
   </div>
 
+
+  <!-- <img src="images/point-down.svg" width="10%" style="border:2px solid white; border-radius: 30px;" /> -->
+
   <div class="plot-group tag reverse-order-mobile">
     <div class="inner-plot-group right-text-aling">
-      <h3 class="plot-title language-color">Solution per language</h3>
+      <h3 class="plot-title language-color">Solutions per language</h3>
       <p class="plot-desc">
         To get a quick overview, we start by investigating which languages are mostly picked among programmers to solve
-        these problems. This, would indirectly show us which ones are more suitable for competitive programming.
+        these problems.
         <br><br>
         As one can see in the donut chart, C++ is used in most solutions with 51.1% and then goes C with 29.1%. Both
         languages are known for their good time performance. Next come JAVA and PYTHON. We understand that competitive
         programmers code with languages that are faster even though they have more verbosity instead of coding with
-        syntactically simpler ones but being slower (like PYTHON). We can also note that OOP (Object Oriented
-        Programming) languages are choosed over functional. In the middle, we put the total number of submissions which
-        is 1,008,078.
+        syntactically simpler ones but being slower (like PYTHON).
       </p>
     </div>
-    <iframe width="50%" height="700" frameborder="0" scrolling="no" src="//plotly.com/~loukaspap/4.embed"></iframe>
+    <iframe width="50%" height="600" frameborder="0" scrolling="no" src="//plotly.com/~loukaspap/4.embed"></iframe>
 
   </div>
 
   <div class="plot-group tag">
-    <iframe width="50%" height="700" frameborder="0" scrolling="no" src="//plotly.com/~loukaspap/1.embed"></iframe>
+    <iframe width="50%" height="600" frameborder="0" scrolling="no" src="//plotly.com/~loukaspap/1.embed"></iframe>
     <div class="inner-plot-group left-text-aling">
       <h3 class="plot-title language-color">Lines Of Code per language</h3>
       <p class="plot-desc">
         As the title says, this bar chart visualizes how many Lines of Code (LoC) on average are written with a
         language.
         <br><br>
-        Results are presented in ascending order, starting with TEXT and finishing with C++. TEXT is nothing
-        more than a simple text file that CodeChef accepts as solution for a specific category of problems. The 3
-        languages with the most lines are C++ followed by JAVA and C. These is because of their verbose nature to
-        express things when writing code. Opposingly, TCL, HASK and PERL have the fewer LoC.
-        <br><br>
-        Of course, this metric can be influenced by the personal style of each developer. For example, one may put new
-        line after opening left curly bracket, or break the code into small methods which results in more lines. One
-        more possible factor is that users coding in those languages engage more often in harder problems that require
-        lengthier solutions.
+        The 3 languages with the most lines are C++ followed by JAVA and C. These is because of their verbose nature to
+        express things when writing code. Opposingly, TCL, HASK and PERL have the fewer LoC. Of course, this metric can
+        be partly influenced by the personal style of each developer.
       </p>
     </div>
   </div>
@@ -83,17 +74,11 @@
       <h3 class="plot-title language-color">Changed Preferences</h3>
       <p class="plot-desc">
         For the final visualization of this section, we found interesting to see how many users moved from their initial
-        coding language to another. The Chord chart was the best fit for this purpose. Hovering over a line displays
-        details.
+        coding language to another. The Chord chart was the best fit for this purpose.
         <br><br>
         In general, most programmers that started with a language, kept coding in it. C++ was the language to welcome
-        the most newcomers from other languages while keeping its majority of users (almost 22,000). 5,508 programmers
-        changed from C to C++, probably because the latter is a superset of the former, so the transition was not
-        difficult. In contrast, 1,751 people moved from C++ to C. "Population exchanges" between the rest of the
-        languages ranged from 0 to 800.
-        <br><br>
-        To measure this, we kept for each competitor his first and last submission based on datetime from all problems
-        and checked if there was a change in the language he used.
+        the most newcomers from other languages while keeping its majority of users (almost 22,000). "Population
+        exchanges" between the rest of the languages ranged from 0 to 800.
       </p>
     </div>
     <iframe width="30%" height="700" frameborder="0"

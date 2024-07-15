@@ -24,12 +24,12 @@ body {
   font-family: "Libre Baskerville", serif;
   background-color: #323238;
   text-align: center;
-  background-image: url("../images/Noise.svg");
+  background-image: url("../images/noise1.svg");
   background-repeat: repeat;
 }
 
 footer {
-  font-family: BpnoScript;
+  font-family: "Libre Baskerville";
   color: white;
   margin-top: 20px;
 }
@@ -59,19 +59,27 @@ footer {
 }
 
 .small-header {
-  font-family: "Josefin Sans";
-  font-size: 2em;
-  font-weight: 300;
+  font-family: "Libre Baskerville";
+  font-size: 1.4em;
+  font-weight: 100;
   max-width: 95%;
+  color: white;
 }
 
 .project-desc {
-  font-size: 2.5em;
-  font-family: "Josefin Sans";
-  font-weight: 300;
-  text-align: justify;
+  font-size: 2.0em;
+  font-family: "Libre Baskerville";
+  font-weight: 100;
+  text-align: start;
   padding-left: 5%;
   padding-right: 5%;
+}
+
+li {
+  font-size: 2.2em;
+  font-family: "Libre Baskerville";
+  font-weight: 100;
+  text-align: start;
 }
 
 #cp {
@@ -103,19 +111,18 @@ footer {
 }
 
 #headerLibre {
-  font-size: 6em;
+  font-size: 5em;
   font-style: italic;
-  /* color: #D93333; */
-  margin-top: 250px;
+  text-align: start;
+  margin-top: 200px;
 }
 
 #paragraphLibre {
   font-size: 3em;
-  max-width: 70%;
-  margin: 15px auto;
+  max-width: 100%;
+  margin: 0px auto;
   color: #ffffff;
-  text-align: justify;
-  text-align-last: center;
+  text-align: start;
 }
 
 .full-dataset {
@@ -155,8 +162,8 @@ footer {
   
   .project-desc {
     font-size: 2.1em;
-    font-family: "Josefin Sans";
-    text-align: justify;
+    font-family: "Libre Baskerville";
+    text-align: start;
     padding-left: 5%;
     padding-right: 5%;
   }
@@ -178,17 +185,19 @@ footer {
   }
 
   #headerLibre {
-    font-size: 3em;
+    font-size: 2em;
     font-style: italic;
-    /* color: #D93333; */
-    margin-top: 130px;
+    text-align: start;
+    max-width: 80%;
+    margin: 5px auto;
+    margin-top: 100px;
   }
 
   #paragraphLibre {
-    font-size: 2em;
-    max-width: 70%;
+    font-size: 1.8em;
+    max-width: 80%;
     margin: 5px auto;
     color: #ffffff;
-    text-align: center;
+    text-align: start;
   }
 }
